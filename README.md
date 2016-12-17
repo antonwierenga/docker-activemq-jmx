@@ -36,7 +36,7 @@ Port Map
 |1099|JMX|
 
 # activemq-cli
-[activemq-cli](https://github.com/antonwierenga/activemq-cli) is a command-line utility I developed to interact with the Apache ActiveMQ message broker using OpenWire/JMX. Check out [GitHub](https://github.com/antonwierenga/activemq-cli) for more information.
+[activemq-cli](https://github.com/antonwierenga/activemq-cli) is a command-line utility I developed to interact with a Apache JMX enabled ActiveMQ message broker. Check out [GitHub](https://github.com/antonwierenga/activemq-cli) for more information.
 
 Assuming both the [activemq-cli](https://github.com/antonwierenga/activemq-cli) utility and the [activemq-jmx](https://hub.docker.com/r/antonw/activemq-jmx/) docker are running on localhost, below is the configuration that will allow activemq-cli to connect to the ActiveMQ broker.
 

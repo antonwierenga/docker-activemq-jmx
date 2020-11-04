@@ -1,5 +1,5 @@
 # docker-activemq-jmx
-Unable to find an ActiveMQ docker that allows for remote JMX access I created one based on the Dockerfile from [rmohr/activemq](https://hub.docker.com/r/rmohr/activemq/).
+Unable to find an ActiveMQ docker that allows for remote JMX access I created one based on the Dockerfile from [rmohr/activemq](https://hub.docker.com/r/rmohr/activemq/). The docker also includes the [hawtio](https://hawt.io) web console.
 
 To run the container:
 ```
@@ -27,13 +27,16 @@ Port Map
 
 |Port|Protocol|
 |----|---|
-|8161|HTTP (WEB UI)|
+|8161|HTTP (ActiveMQ Web Console root context path: "/", hawtio context path: "/hawtio")|
 |61616|OPENWIRE|
 |5672|AMQP|
 |61613|STOMP|
 |1883|MQTT|
 |61614|WS|
 |1099|JMX|
+
+
+
 
 # activemq-cli
 [activemq-cli](https://github.com/antonwierenga/activemq-cli) is a command-line utility I developed to interact with a Apache JMX enabled ActiveMQ message broker. Check out [GitHub](https://github.com/antonwierenga/activemq-cli) for more information.
